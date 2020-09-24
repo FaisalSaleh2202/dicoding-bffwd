@@ -16,10 +16,16 @@ const main = () => {
     const dropdown = document.querySelectorAll('.catagories-item');
     dropdown.forEach(meals => {
         meals.addEventListener("click", function () {
-            const strArea = this.innerHTML;
             const strCatagory = this.innerHTML;
-            area(strArea);
             catagory(strCatagory);
+        })
+    })
+
+    const dropdown_area = document.querySelectorAll('.catagories-area');
+    dropdown_area.forEach(meals => {
+        meals.addEventListener("click", function () {
+            const strArea = this.innerHTML;
+            area(strArea);
         })
     })
 
