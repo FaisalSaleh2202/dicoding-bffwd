@@ -1,0 +1,228 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+
+.navbar {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.nav-link,
+.createAccount {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1c1f18;
+
+    &:hover {
+        color: #1c1f18;
+    }
+}
+
+.navbar-brand {
+    background-color: #ef2d2b;
+    padding: 10px 12px !important;
+    color: #eae9e3;
+
+    &:hover {
+        color: #eae9e3;
+    }
+}
+
+.good {
+    font-weight: bolder;
+}
+
+.txt-food {
+    font-weight: 200;
+}
+
+.signIn {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    background-color: #ef2d2b;
+    padding: 8px 26px;
+
+    &:hover {
+        color: #eae9e3;
+        text-decoration: none;
+    }
+}
+
+.createAccount {
+    color: #ef2d2b;
+    text-decoration: none;
+
+    &:hover {
+        color: #e23f3d;
+        text-decoration: none;
+    }
+}
+
+//menu
+
+.menu p {
+    font-size: 12px;
+}
+
+// meal item 
+.navbar-brand-detail {
+    margin: 0 auto;
+}
+
+.details {
+
+    .navbar-brand {
+        background-color: #ef2d2b;
+        padding: 8px 14px !important;
+        color: #eae9e3;
+
+        &:hover {
+            color: #eae9e3;
+        }
+
+        span {
+            font-size: 16px;
+        }
+
+        .good {
+            font-weight: bolder !important;
+            font-size: 18px;
+        }
+
+        .txt-food {
+            font-weight: 200;
+        }
+    }
+
+    h5 {
+        font-family: "Open Sans", sans-serif;
+    }
+
+    hr {
+        border: .1px dashed $gray-400;
+    }
+
+    p,
+    span,
+    li {
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+    }
+
+    .img-shadow {
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 15px 2px;
+    }
+
+    .author {
+        font-size: 0.7rem;
+        color: $gray-500;
+        text-transform: uppercase;
+
+        &::before {
+            content: "by ";
+            font-size: 0.6rem;
+            text-transform: lowercase;
+        }
+    }
+
+    .recipe-details {
+        .icon-detail-svg {
+            width: 32px;
+            background-color: #f4f4e3;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 100%;
+            margin-right: 5px;
+        }
+    }
+
+    .card-inggredient {
+        padding: 4%;
+        border-width: 1px 1px 0px;
+        border-style: solid solid solid;
+        border-color: rgb(234, 234, 234) rgb(234, 234, 234) rgb(234, 234, 234);
+        border-image: initial;
+        border-bottom: 0px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 14px;
+            width: 94%;
+            height: 26px;
+            // background: url('../assets/images/separator-bottom.gif') left center repeat-x;
+        }
+
+        .ingredients {
+            padding: 0 0 10px 0;
+            margin: 0px;
+            list-style: none;
+            margin-block-start: 0;
+
+            li {
+                padding: 10px;
+
+                &:nth-child(2n+1) {
+                    background-color: #f4f4e3;
+                }
+            }
+        }
+    }
+
+    .methods {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        margin-block-start: 0;
+
+        li {
+            counter-increment: method 1;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgb(240, 242, 235);
+
+            &::before {
+                content: counter(method) ".";
+                font-weight: 700;
+                font-size: 23px;
+                margin-right: 8px;
+                float: left;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+// about / footer
+
+.about-meal {
+
+    .card-about-link {
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 15px 2px;
+        height: 150px;
+
+        a {
+            text-decoration: none;
+            margin: auto;
+            color: #1c1f18;
+            font-weight: 500;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+            &:hover {
+                color: #1c1f18;
+            }
+        }
+
+        p {
+            font-family: "Open Sans", sans-serif;
+            font-size: 12px;
+        }
+    }
+}

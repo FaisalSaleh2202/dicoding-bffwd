@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Good Food</title>
+</head>
+
+<body>
+  <main>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#"><span class="good">Good</span><br><span class="txt-food">Food</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><img src="../src/assets/icons/open-menu.png" alt=""></span>
+      </button>
+
+      <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link all-menu" href="#">Menu<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown dropdown-country">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Country
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item catagories-item" href="#">Canadian</a>
+              <a class="dropdown-item catagories-item" href="#">Italian</a>
+              <a class="dropdown-item catagories-item" href="#">Chinese</a>
+              <a class="dropdown-item catagories-item" href="#">American</a>
+              <a class="dropdown-item catagories-item" href="#">British</a>
+              <a class="dropdown-item catagories-item" href="#">French</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown dropdown-catagories">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Catagories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item catagories-item" href="#">Beef</a>
+              <a class="dropdown-item catagories-item" href="#">Pasta</a>
+              <a class="dropdown-item catagories-item" href="#">Dessert</a>
+              <a class="dropdown-item catagories-item" href="#">Seafood</a>
+              <a class="dropdown-item catagories-item" href="#">Chicken</a>
+              <a class="dropdown-item catagories-item" href="#">Vegetarian</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link about" href="#" tabindex="-1">About</a>
+          </li>
+        </ul>
+        <!-- componen serach -->
+        <search-bar></search-bar>
+        <a class="createAccount mr-5" href="#">Create an Account</a>
+        <a class="signIn" href="#">Sign In</a>
+      </div>
+    </nav>
+
+    <header-jumbotron></header-jumbotron>
+
+    <div class="container">
+      <section class="menu row">
+        <div class="col-sm-12 col-md-12">
+          <meal-item class="row"></meal-item>
+        </div>
+      </section>
+    </div>
+    <div id="loader-text" class="loader loader-default is-active" style="display: none;">
+      <div class="loader-message">Loading</div>
+    </div>
+  </main>
+
+  <section class="details container mb-5" style="display:none;">
+    <div>
+      <a class="navbar-brand" href="#"><span class="good">Good</span><br><span class="txt-food">Food</span></a>
+    </div>
+    <breadcrumb-detail currentpage=""></breadcrumb-detail>
+
+    <div class="row container">
+      <div class="row">
+        <div class="col-12 col-md-5 mb-2">
+          <img src="" id="detailImage" class="img-fluid img-shadow">
+        </div>
+        <div class="col-12 col-md-7">
+          <detail-header strMeal="" strCategory="" strArea="">
+          </detail-header>
+          <div>
+            <h5>Method</h5>
+            <hr>
+            <ol class="methods"></ol>
+          </div>
+          <div>
+            <h5>Ingredients</h5>
+            <hr>
+            <div class="card-inggredient px-3 py-3">
+              <ul class="ingredients"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <about-component style="display: none;">
+  </about-component>
+</body>
+
+</html>
