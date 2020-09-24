@@ -1,5 +1,5 @@
 # dicoding-bffwd
-Dicoding Submission Belajar Fundamental Front-End Web Development
+Web Hasil Revisi Setelah Dicoding Submission Belajar Fundamental Front-End Web Development
 
 ![gif2](https://user-images.githubusercontent.com/71815621/94134854-cad42a00-fe8c-11ea-81a6-25b4bd6d728e.gif)
 
